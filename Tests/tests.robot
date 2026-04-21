@@ -2,7 +2,8 @@
 Library     SeleniumLibrary
 Resource    ../Variables/variables.robot
 Resource    ../Keywords/keywords.robot
-
+# Caso de prueba End-To-End
+# Agrega un producto al carrito y lo compra
 *** Test Cases ***
 TC_001_E2E_Compra
     # Entra a la página de pruebas
