@@ -8,7 +8,7 @@ Resource    ../Keywords/keywords.robot
 TC_001_E2E_Compra
     # Entra a la página de pruebas
     Initialize
-    # Selecciona el producto Sony xperia z5
+    # Selecciona el producto
     Wait Until Page Contains Element    css=${product_location}
     Page Should Contain Element    css=${product_location}
     Click Element    css=${product_location}
@@ -37,7 +37,7 @@ TC_001_E2E_Compra
     Enter_Text    id=month    ${client_card_month}
     # Ingresa la información del año
     Enter_Text    id=year    ${client_card_year}
-    # Expera un máximo de 10 segundos hasta que el botón de purchase sea visible y esté habilitado
+    # Expera hasta que el botón de purchase sea visible y esté habilitado
     Wait_For_Element_Ready    xpath=${purchase_button}
     # Hace click en el botón de purchase
     Click Button    xpath=${purchase_button}
