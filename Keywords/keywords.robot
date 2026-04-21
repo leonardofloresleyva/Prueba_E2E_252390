@@ -3,7 +3,8 @@ Library    SeleniumLibrary
 Resource    ../Variables/variables.robot
 *** Keywords ***
 Initialize
-    Open Browser    ${browser}     ${url}
+    Open Browser    ${None}     ${browser}
+    Go To           ${url}
     Maximize Browser Window
 
 Wait_For_Element_Ready
